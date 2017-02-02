@@ -1,0 +1,43 @@
+article{
+    margin-left: 200px;
+    width: 877px;
+    height: 850px;
+    
+   
+}
+h1{
+    padding-top: 10px;
+    text-align: center;
+}
+#infoGeral{
+    text-align: center;
+    background: #FFE7BA;
+}
+.h3{
+    text-align: center;
+    background: #CDAA7D;
+}
+#despMensais{
+    margin-top: -15px;
+    background: #EEE9BF;
+
+}
+#despDoAp{
+    margin-top: -15px;
+    background: #EEE9BF;
+
+}
+#saidaRes{
+    float: left;
+    margin-top: -567px;
+    margin-left: 425px;
+    background: #EEE9BF;
+}
+#entradaRes{
+    
+    margin-top: -300px;
+    margin-left: 425px;
+    background: #EEE9BF;
+
+}
+
