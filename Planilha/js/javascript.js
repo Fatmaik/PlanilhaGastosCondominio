@@ -1,8 +1,9 @@
 window.onload = function() {
-    // infoGeral();
-    // infoPredio();
-    // infoAp();
-    // saidaEntrada();
+    document.getElementById("infoG").onclick = infoGeral;
+    document.getElementById("despM").onclick = infoPredio;
+    document.getElementById("despA").onclick = infoAp;
+    document.getElementById("despS").onclick = saidaEntrada;
+    document.getElementById("h1").onclick = infoAp;
     
 }
 function infoGeral() {;
@@ -28,16 +29,16 @@ function infoPredio() {
     var totdesp = document.getElementById("totdesp");
 
     var desD = parseFloat(prompt("Diaria do predio: "));
-    despDiaria.innerText += desD.toFixed(2);
+    despDiaria.innerText = "R$ " + desD.toFixed(2);
 
     var desG = parseFloat(prompt("Gasto de gas Predio: "));
-    despGas.innerText += desG.toFixed(2);
+    despGas.innerText = "R$ " + desG.toFixed(2);
 
     var desA = parseFloat(prompt("Gasto de agua Predio:"));
-    despAgua.innerText += desA.toFixed(2);
+    despAgua.innerText = "R$ " + desA.toFixed(2);
 
     var desL = parseFloat(prompt("Gasto de Luz Predio: "));
-    despLuz.innerText += desL.toFixed(2);
+    despLuz.innerText = "R$ " + desL.toFixed(2);
 
     var totd = (desD + desG + desA + desL).toFixed(2);
     totdesp.innerText = "R$ " + totd;
@@ -51,16 +52,16 @@ function infoAp() {
     var totdespAp = document.getElementById("totdespAp");
 
     var desDAp = parseFloat(prompt("Gasto com Diaria do Ap: "));
-    despDiariaAp.innerText += desDAp.toFixed(2);
+    despDiariaAp.innerText = "R$ " + desDAp.toFixed(2);
 
     var despGAp = parseFloat(prompt("Gasto com Gaz do Ap: "));
-    despGasAp.innerText += despGAp.toFixed(2);
+    despGasAp.innerText = "R$ " + despGAp.toFixed(2);
 
     var despAAp = parseFloat(prompt("Gasto com Agua do Ap: "));
-    despAguaAp.innerText += despAAp.toFixed(2);
+    despAguaAp.innerText = "R$ " + despAAp.toFixed(2);
 
     var despLAp = parseFloat(prompt("Gasto com Luz do Ap: "));
-    despLuzAp.innerText += despLAp.toFixed(2);
+    despLuzAp.innerText = "R$ " + despLAp.toFixed(2);
 
     var despRAp = parseFloat(prompt("Reserva do Ap: "));
     var totdAp = (desDAp + despGAp + despAAp + despLAp + despRAp).toFixed(2);
@@ -85,7 +86,7 @@ function saidaEntrada() {
     var prod2 = prompt("Informe o produto 2");
     produto2.innerText = prod2;
     if(prod2 != ""){
-        var precoP2 = parseFloat(prompt("valor produto 3: "));
+        var precoP2 = parseFloat(prompt("valor produto 2: "));
         precopro2.innerText += precoP2.toFixed(2);
         x += precoP2;
     }
@@ -101,7 +102,7 @@ function saidaEntrada() {
     var prod4 = prompt("Informe o produto 4");
     produto4.innerText = prod4;
     if(prod4 != "") {
-        var precoP2 = parseFloat(prompt("valor produto 4: "));
+        var precoP4 = parseFloat(prompt("valor produto 4: "));
         precopro4.innerText += precoP4.toFixed(2);
         x += precoP4;
     }
